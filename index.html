@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            books
+             <button  id ="resetbutton"onclick="resetstorage()">reset</button>
+        </div> 
+       
+        <div class="ff">
+            <form name='form' id='form'>
+                book：
+                <input type='text' name='title' id='title' size="5"required/> 
+                auther:
+                <input type='text' name='auther' id='auther'size="5" required/>
+                page:
+                <input type='number' name='page' id='page' min=1 size="5"required/>
+        
+                  <input type="checkbox" name="readed" id="readed">
+                <label for="readed">read</label>
+
+                <input type='button' name='submit' value='Submit' onclick="addNewBook()" />
+              </form>
+             </div>
+             <div class="book1">
+                 <div class="bookname1">book</div> 
+                 <div class="bookauther1">auther</div>
+                 <div class="bookpage1">bookpage</div>
+                 <div class="readOrNot1">read</div>
+                 <div class="delete1">delete</div>
+             </div>
+        <div class="storage"id="storage">
+            
+        </div>
+    </div>
+</body>
+<script src="js.js"></script>
+</html>
+            <!-- <div class="book">
+                 <div class="bookname">test</div> 
+                 <div class="bookauther">dick</div>
+                 <div class="bookpage">25</div>
+                 <div class="readOrNot">y</div>
+                 <div class="delete">X</div>
+             </div> -->
